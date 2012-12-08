@@ -1,8 +1,10 @@
 <?php
 include 'sort.php';
 include 'heapSort.php';
+include 'mergeSort.php';
 $heap=new heapSort();
-for ($i=0;$i<1000;$i++) {
+$mergeSort=new mergeSort();
+for ($i=0;$i<4000;$i++) {
     $element=  floor(rand(0, 1000));
     $sir[]=$element;
 }
@@ -28,6 +30,8 @@ $oquick=sort::optQuickSort($sir);
 $time9=microtime(true);
 $arheap=$heap->heap($sir);
 $time10=microtime(true);
+$merge=$mergeSort->sort($sir);
+$time11=microtime(true);
 echo "Selection Sort<br/>";
 echo $time2-$time1;
 //print_r($selection);
@@ -62,5 +66,9 @@ echo $time9-$time8;
 echo "<hr/>";
 echo "Heap Sort<br/>";
 echo $time10-$time9;
-print_r($arheap);
+//print_r($arheap);
+echo "<hr/>";
+echo "Merge Sort<br/>";
+echo $time11-$time10;
+//print_r($merge);
 ?>

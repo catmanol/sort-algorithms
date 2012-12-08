@@ -40,7 +40,7 @@ class heapSort {
      * @param array $array
      * @param integer $start
      * @param integer $end
-     * @return NULL when tree is sorted
+     * @return when tree is sorted
      */
     private function siftDown(&$array,$start,$end) {
         $root=$start;
