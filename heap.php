@@ -11,11 +11,11 @@ echo $time2-$time1;
  
  */
 include "mergeSort.php";
-$sir=array(3,5,120,65,34,7,2,1,0);
+$sir=array(3,5,120,65,34,7,2,1,0,14000);
 $sort= new mergeSort();
 //$sorted=$sort->fun($sir);
 //print_r($sorted);
-$merge=$sort->sort($sir);
+$merge=$sort->fun($sir);
 echo "<br/>";
 print_r ($merge);
 echo "<hr/>";
