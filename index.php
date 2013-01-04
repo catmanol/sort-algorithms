@@ -32,8 +32,6 @@ $arheap=$heap->heap($sir);
 $time10=microtime(true);
 $merge=$mergeSort->sort($sir);
 $time11=microtime(true);
-$fun=$mergeSort->fun($sir);
-$time12=microtime(true);
 echo "Selection Sort<br/>";
 echo $time2-$time1;
 //print_r($selection);
@@ -73,8 +71,5 @@ echo "<hr/>";
 echo "Merge Sort<br/>";
 echo $time11-$time10;
 //print_r($merge);
-echo "<hr/>";
-echo "Fun Sort<br/>";
-echo $time12-$time11;
-print_r($fun);
+
 ?>
